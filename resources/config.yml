@@ -17,7 +17,7 @@
 # Extra tag for titles:
 # - {SUBTITLE}: Add subtitle (the text after this tag will be the content of the subtitle) 
 # Prefix
-prefix: "&9[&eBroadcaster&9]"
+prefix: "&6&lTIP &r&7>"
 # Suffix
 suffix: "[A]"
 # Date\Time format (replaced in {TIME}). For format codes read http://php.net/manual/en/datetime.formats.php
@@ -27,18 +27,29 @@ message-broadcast:
  # Enable message broadcast
  enabled: true
  # Broadcast interval (in seconds)
- time: 15
+ time: 60
  # Command /sendmessage format
  command-format: "&e[{TIME}] {PREFIX} {SUFFIX} &a{SENDER}&e>&f {MESSAGE}"
  # Broadcast messages
  messages:
-  - "&e[{TIME}] {PREFIX}&f 1st message"
-  - "&e[{TIME}] {PREFIX}&f 2nd message"
-  - "&e[{TIME}] {PREFIX}&f 3rd message"
+  - "{PREFIX} &dFollowing the rules is always key! So make sure you do so."
+  - "{PREFIX} &dVoted? Use &5/vote &dto see if you've voted or not."
+  - "{PREFIX} &dVote for: &5Voter rank, Money in game, commands, perks, and more! @ http://tinyurl.com/vote4vfpe"
+  - "{PREFIX} &dJoin The Void network official discord here: &5http://tinyurl.com/vmdc"
+  - "{PREFIX} &dSubscribe to the Owner's channel for: Great content, live streams, updates, and more! &5http://tinyurl.com/zeaodc"
+  - "{PREFIX} &dThe spawn was built by our amazing staff team! Make sure to GG them in the chat!"
+  - "{PREFIX} &dWelcome to &6Void&bFactions&cPE! &dWe are on Season 3!"
+  - "{PREFIX} &dWant to apply for a open staff spot / position? Apply here: &5http://vmpeapply.ml"
+  - "{PREFIX} &dThis update is called "The vanilla update." We do however, listen to our users / players on our server."
+  - "{PREFIX} &dThe founder of this server is named: &5ZeaoPlayzMC&d."
+  - "{PREFIX} &dWant to join the hub server? Connect with: &5play.voidminerpe.ml &dPort: &525621 &dor use &5/hub to teleport to that server."
+  - "{PREFIX} &dWant to PvP? Use &5/arena&d."
+  - "{PREFIX} &dWant to get a kit? Use: &5/kit <kit_name>"
+  - "{PREFIX} &dWe have bountie's back! Use: &5/bounty for a list of bounty commands."
 # Popup broadcast
 popup-broadcast:
  # Enable popup broadcast
- enabled: true
+ enabled: false
  # Popup broadcast interval (in seconds)
  time: 15
  # Popup duration (in seconds)
@@ -53,7 +64,7 @@ popup-broadcast:
 # Title broadcast
 title-broadcast:
  # Enable title broadcast
- enabled: true
+ enabled: false
  # Title broadcast interval
  time: 30
  # Command /sendtitle format
